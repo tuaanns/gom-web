@@ -19,8 +19,8 @@ export const QRStage = ({ qrData, purchasing, notify, onConfirm, onCancel, onSim
 
   const items = [
     { label: t('payment.qr.bank'), value: qrData?.bank_name || 'ACB' },
-    { label: t('payment.qr.account'), value: qrData?.account_number || '—', copy: true },
-    { label: t('payment.qr.owner'), value: qrData?.account_name || '—' },
+    { label: t('payment.qr.account'), value: qrData?.account_number || '28569967', copy: true },
+    { label: t('payment.qr.owner'), value: qrData?.account_name || 'MA GIA TUAN' },
     {
       label: t('payment.qr.content'),
       value: qrData?.transfer_content || '—',

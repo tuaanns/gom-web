@@ -200,8 +200,8 @@ export const PaymentPage = ({ fetchUser, notify, setView }) => {
       // Build robust payment data with bank fallback (server SHOULD return bank_info)
       const bankInfo = serverData?.bank_info || {};
       const bankName = bankInfo.bank_name || bankInfo.bank || serverData?.bank_name || 'ACB';
-      const account = bankInfo.account_number || serverData?.account_number || '';
-      const owner = bankInfo.account_name || serverData?.account_name || '';
+      const account = bankInfo.account_number || serverData?.account_number || '28569967';
+      const owner = bankInfo.account_name || serverData?.account_name || 'MA GIA TUAN';
 
       const qrUrl =
         serverData?.qr_url ||
